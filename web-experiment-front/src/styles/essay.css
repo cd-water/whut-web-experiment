@@ -1,0 +1,71 @@
+.essay-isntEnter {
+    display: flex;
+    gap: 10%;
+}
+
+.admin-table {
+    flex: 1;
+}
+
+.essay-report {
+    flex: 1;
+}
+
+.title {
+    font-family: 'kaiti';
+    font-size: 200%;
+    text-align: center;
+    margin: auto;
+}
+
+.essay-isEnter {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+
+.admin-info {
+    flex: 2;
+}
+
+.essay-table {
+    flex: 5;
+}
+
+.insert-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.essay-search {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dialog-title {
+    font-size: 200%;
+    font-family: '楷体';
+    margin: auto;
+    text-align: center;
+}
+
+.dialog-form {
+    margin: 20px;
+}
+
+.dialog-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1000px) {
+
+    .essay-isntEnter,
+    .essay-isEnter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

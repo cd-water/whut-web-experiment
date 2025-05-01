@@ -1,0 +1,59 @@
+.register-title {
+    font-size: 200%;
+    font-family: '楷体';
+    text-align: center;
+    margin: auto;
+}
+
+.register-main {
+    margin: 1%;
+    padding: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.register-form {
+    padding-right: 40px;
+    border-right: 1px solid #4d4646;
+}
+
+.register-upload {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #4d4646;
+    border-radius: 6px;
+}
+
+.register-footer {
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 40px;
+}
+
+@media (max-width: 800px) {
+    .register-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-form {
+        border-right: none;
+        width: 73%;
+    }
+
+    .register-upload {
+        margin-top: -40px;
+        margin-right: 40px;
+    }
+
+    .register-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

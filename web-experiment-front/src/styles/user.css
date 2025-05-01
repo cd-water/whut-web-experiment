@@ -1,0 +1,33 @@
+.user-title {
+    font-size: 200%;
+    font-family: '楷体';
+    text-align: center;
+    margin: auto;
+}
+
+.insert-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-search {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dialog-title {
+    font-size: 200%;
+    font-family: '楷体';
+    margin: auto;
+    text-align: center;
+}
+
+.dialog-form {
+    margin: 20px;
+}
+
+.dialog-button {
+    display: flex;
+    justify-content: space-around;
+}

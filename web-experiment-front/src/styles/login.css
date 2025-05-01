@@ -1,0 +1,75 @@
+.login-ui {
+    width: 620px;
+    border: 1px solid #e6dddd;
+    border-radius: 2%;
+    background-color: #eeede7;
+}
+
+.login-title {
+    font-size: 200%;
+    font-family: '楷体';
+    text-align: center;
+    margin: auto;
+}
+
+.login-main {
+    padding: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.login-method {
+    border-right: #4d4646 1px solid;
+    padding-right:40px ;
+}
+
+.login-form {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.qq-btn,
+.vx-btn,
+.ali-btn {
+    width: 100%;
+    height: 42px;
+    margin: 8px!important;
+}
+
+.login-btn {
+    width: 100%;
+    height: 42px;
+}
+
+.login-footer {
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding: 40px;
+}
+
+@media (max-width: 800px) {
+    .login-main {
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .login-method {
+        border-right: none;
+        width: 74%;
+    }
+
+    .login-form {
+        width: 74%;
+        margin-right: 28px;
+
+    }
+
+    .login-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}

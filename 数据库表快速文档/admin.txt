@@ -1,0 +1,18 @@
+create table admin
+(
+    id          int unsigned auto_increment comment 'ID,主键'
+        primary key,
+    username    varchar(20)                     not null comment '用户名',
+    password    varchar(50)                     not null comment '密码',
+    name        varchar(30)  default '未知姓名' null comment '姓名',
+    phone       char(11)     default 'Unknown'  null comment '手机号',
+    email       varchar(50)                     not null comment '邮箱',
+    birthday    date                            null comment '出生日期',
+    money       int unsigned default '0'        null comment '薪资',
+    address     varchar(50)  default 'Unknown'  null comment '地址',
+    avatar      varchar(300)                    null comment '头像',
+    essay_count int unsigned default '0'        null comment '文章数量',
+    constraint admin_pk
+        unique (username)
+)
+    comment '管理员表';

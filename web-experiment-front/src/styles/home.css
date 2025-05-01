@@ -1,0 +1,40 @@
+.home-container {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.description {
+    flex: 2;
+}
+
+.calendar {
+    flex: 3;
+}
+
+.edit {
+    justify-content: space-around;
+    display: flex;
+    background-color: rgb(41, 110, 170);
+}
+
+@media (max-width: 1000px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .description {
+        margin-top: -80px;
+        width: 400px;
+    }
+
+    .calendar {
+        width: 400px;
+    }
+
+    :deep(.el-calendar-day) {
+        height: 60px !important;
+    }
+}

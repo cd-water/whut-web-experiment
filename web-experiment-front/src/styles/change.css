@@ -1,0 +1,16 @@
+.change-title {
+    font-size: 200%;
+    font-family: '楷体';
+    text-align: center;
+    margin: auto;
+}
+
+.change-form {
+    margin: 40px;
+}
+
+.change-btn {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+}

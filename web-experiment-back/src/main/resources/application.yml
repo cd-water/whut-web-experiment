@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: web-experiment-back
+  #配置数据库连接信息
+  datasource:
+    url: jdbc:mysql://localhost:3306/web_experiment?allowMultiQueries=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: cdwater
+
+#Mybatis的相关配置
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #开启驼峰命名映射
+    map-underscore-to-camel-case: true
+
+#配置日志信息，查看spring事务管理的底层日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
+
+#阿里云OSS
+aliyun:
+  oss:
+    endpoint: https://oss-cn-beijing.aliyuncs.com
+    bucketName: cdwater-bucket
+    region: cn-beijing
